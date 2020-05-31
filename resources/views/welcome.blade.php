@@ -15,9 +15,18 @@
     <livewire:styles/>
 </head>
 <body>
-<div class="w-full h-screen p-2">
-    <livewire:sales-orders-status-board/>
+
+<div class="w-full h-screen p-2 bg-blue-300">
+    <livewire:sales-orders-status-board
+        before-status-board-view="before-view"
+        :sortable="true"
+        :sortable-between-statuses="true"
+        status-footer-view="footer"
+        record-view="record"
+    />
 </div>
+
 <livewire:scripts/>
+
 </body>
 </html>

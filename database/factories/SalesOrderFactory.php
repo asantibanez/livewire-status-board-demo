@@ -10,6 +10,6 @@ $factory->define(SalesOrder::class, function (Faker $faker) {
     return [
         'client' => $faker->name,
         'status' => 'registered',
-        'total' => $faker->randomFloat(2),
+        'total' => $faker->numberBetween(1000, 9999),
     ];
 });
