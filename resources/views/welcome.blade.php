@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div class="w-full h-screen p-2 bg-blue-300">
+<div class="w-full h-screen p-2 bg-blue-500">
     <livewire:sales-orders-status-board
         before-status-board-view="before-view"
         :sortable="true"
