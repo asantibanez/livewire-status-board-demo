@@ -20,7 +20,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "jquery": "^3.5.1",
-        "sortablejs": "^1.10.2"
+        "`jquery`": "^3.5.1",
+        "`sortablejs`": "^1.10.2"
     }
 }

@@ -22,16 +22,12 @@ class SalesOrdersStatusBoard extends LivewireStatusBoard
                 'title' => 'Awaiting Confirmation',
             ],
             [
-                'id' => 'won',
-                'title' => 'Won',
+                'id' => 'confirmed',
+                'title' => 'Confirmed',
             ],
             [
                 'id' => 'delivered',
                 'title' => 'Delivered',
-            ],
-            [
-                'id' => 'lost',
-                'title' => 'Lost',
             ],
         ]);
     }
@@ -45,6 +41,7 @@ class SalesOrdersStatusBoard extends LivewireStatusBoard
             ->map(function (SalesOrder $salesOrder) {
                 return [
                     'id' => $salesOrder->id,
+                    'title' => $salesOrder->client,
                     'client' => $salesOrder->client,
                     'total' => $salesOrder->total,
                     'status' => $salesOrder->status,
